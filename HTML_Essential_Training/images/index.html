@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            margin: 2em;
+        }
+
+        img {
+            margin: 10px 0;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        figure,
+        img {
+            max-width: 600px;
+        }
+
+        figcaption {
+            text-align: justify;
+            text-align-last: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The picture element</h1>
+
+    <p>Resize the browser window to load different images.</p>
+
+    <picture>
+        <source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
+        <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    <br>
+    <br>
+
+    <picture>
+        <source media="(min-width:600px)" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg">
+        <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg" width="480" height="360"
+            alt="black dog lying in the sun">
+    </picture>
+
+    <br>
+    <br>
+
+    <picture>
+        <source media="(min-width:600px)" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  320w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  480w, 
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  720w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  960w, 
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg 1440w, 
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg 1920w">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg" alt="smiling black dog"
+            height="360px" width="480px">
+    </picture>
+
+    <figure>
+        <img style="border-radius: 50%;" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie2.png" width="960" height="720"
+            alt="shiny black dog in the sun">
+
+        <figcaption>Maggie the dog enjoys resting in a field, after a long day of chasing squirrels, Maggie the dog
+            enjoys resting in a field, after a long day of chasing squirrels., Maggie the dog enjoys resting in a field,
+            after a long day of chasing squirrels.</figcaption>
+    </figure>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 3em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin: 20px;
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            margin-left: 20px;
+            width: 100%
+        }
+
+        #color,
+        #date {
+            width: 30%;
+        }
+
+        fieldset {
+            margin: 20px 0;
+            width: 300px;
+        }
+
+        fieldset>label {
+            margin: 10px;
+            display: flex;
+            width: 45%;
+            align-items: center;
+        }
+
+        span {
+            width: 100%
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px 30px;
+            cursor: pointer;
+            background-color: rgb(190 41 21 / 98%);
+            color: #ffffff;
+            transition: all 1s;
+            border-radius: 10px;
+            font-size:14px;
+        }
+        button:hover{
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            border: 1px solid rgb(190 41 21 / 98%)
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Form</h1><br>
+    <form>
+        <div>
+            <label>Name<input id="name" name="name" type="text"></label>
+            <label>Email<input id="email" name="email" type="email" placeholder="test@example.com"></label>
+            <label>Phone Number<input id="phone" name="phone" type="tel"></label>
+            <label>Password<input id="password" name="password" type="password"></label>
+            <label>Desceiption<textarea id="desceiption" name="desceiption" rows="30" cols="50"
+                    placeholder="example"></textarea>></label>
+            <label>Gander<input id="name" name="name" type="text"></label>
+            <label>Color<input id="color" name="color" type="color"></label>
+            <label>Date<input id="date" name="date" type="date"></label>
+            <label>File<input id="file" name="file" type="file"></label>
+            <fieldset>
+                <legend>Gender</legend>
+                <label><span>Male</span><input id="Gender" name="Gender" type="radio"></label>
+                <label><span>Female</span><input id="Gender" name="Gender" type="radio"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Language</legend>
+                <label><span>English</span><input id="Language" name="Language" type="checkbox"></label>
+                <label><span>Arabic</span><input id="Language" name="Language" type="checkbox"></label>
+                <label><span>Turkish</span><input id="Language" name="Language" type="checkbox"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Carrency</legend>
+                <select>
+                    <option>$</option>
+                    <option>L.L</option>
+                </select>
+            </fieldset>
+            <button type="button">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
